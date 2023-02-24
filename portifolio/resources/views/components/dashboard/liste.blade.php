@@ -1,9 +1,11 @@
 <div class="justify-content-center align-items-center row">
-    <div class="col-md-6 align-self-center text-center">
+    <div class="input-group mb-3 col-md-6">
 
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+        <form action="" class="input-group mb-6 col-md-6">
+            <input class="form-control col-12" type="text" placeholder="Pesquisar" aria-label="Recipient's username" aria-descibedby="button-addon2">
+            <div class="input-group-append">
+                <button class="btn btn-outline-success" type="button" id="button-addon2">Pesquisar</button>
+            </div>
         </form>
     </div>
 </div>
