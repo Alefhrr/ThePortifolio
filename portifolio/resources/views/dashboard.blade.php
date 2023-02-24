@@ -21,20 +21,30 @@
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+          About
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#"data-toggle="modal" data-target="#modalAbout">Adicionar</a>
+          <a class="dropdown-item" href="#">Listar</a>
+          
+        </div>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
           Servece
         </a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Adicionar</a>
+          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalServece">Adicionar</a>
           <a class="dropdown-item" href="#">Listar</a>
           
         </div>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-          Portifolio
+          Portfolio
         </a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Adicionar</a>
+          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalPortfolio">Adicionar</a>
           <a class="dropdown-item" href="#">Listar</a>
           
         </div>
@@ -44,7 +54,7 @@
           Testemunials
         </a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Adicionar</a>
+          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalTestemunials">Adicionar</a>
           <a class="dropdown-item" href="#">Listar</a>
           
         </div>
@@ -54,7 +64,7 @@
           Signature
         </a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Adicionar</a>
+          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalSignature">Adicionar</a>
           <a class="dropdown-item" href="#">Listar</a>
           
         </div>
@@ -63,19 +73,22 @@
   </div>
 </nav>
 <!--fim do navbar---->
+@php 
+    $x = "list";
+@endphp
 
+@if ($x == "teste")
+<p>Rodou</p>
+@elseif ($x == "list")
+<x-dashboard.liste/>
+@else
+@endif
 
-
-
-
-
-
-
-
-
-
-
-
+<x-dashboard.about-modal/>
+<x-dashboard.servece-modal/>
+<x-dashboard.portfolio-modal/>
+<x-dashboard.Testemunials-modal/>
+<x-dashboard.signature-modal/>
 
 
 
